@@ -14,3 +14,6 @@ from django.http import HttpResponse
 def home(request):
     # Assuming you want to render 'index.html' as the response
     return render(request, 'base.html')
+
+def products(request):
+    return render(request, products.html)
