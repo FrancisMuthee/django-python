@@ -36,7 +36,13 @@ def products(request):
     item3.img = 'Arabica.jpg'
     item3.desc = 'From farm to cup'
 
-    itemss = [item1, item2, item3]
+    item4 = items()
+    item4.price = 'Ksh. 999'
+    item4.name = 'Latte'
+    item4.img = 'Arabica.jpg'
+    item4.desc = 'From farm to cup'
+
+    itemss = [item1, item2, item3, item4]
 
     return render(request, 'products.html', {'itemss': itemss})
 
