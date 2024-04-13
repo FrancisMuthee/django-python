@@ -16,4 +16,4 @@ def home(request):
     return render(request, 'base.html')
 
 def products(request):
-    return render(request, products.html)
+    return render(request, 'products.html')
