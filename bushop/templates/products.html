@@ -11,14 +11,17 @@
 </head>
 <body>
     <div class="header">
-        <h2>Product List</h2>
-    </div>
-    <div class="gallery">
+        <h4>Product List</h4>
+        </div>
+    {% for item in itemss%}
+        <div class="gallery">
         <div class="content">
-            <img src="{% static 'images/cup.jpeg' %}">
+            <h4>{{item.name}}</h4>
+            <img src="{{baseUrl}}/{{item.img}}">
             <!-- <h3>Medium Roast Bean 500g</h3> -->
-            <p>Roasted from farm to cup.</p>
-            <h6>Ksh.1249.00</h6>
+            <p>{{item.desc}}</p>
+            {% comment %} <h6>Ksh.1249.00</h6> {% endcomment %}
+            <h6>{{item.price}}</h6>
             <ul>
                 <li><i class="fa fa-star checked"></i></li>
                 <li><i class="fa fa-star checked"></i></li>
@@ -28,8 +31,12 @@
             </ul>
             <button class="buy-1">Buy Now</button>
         </div>
-
+    </div>
+    
+        {% endfor %}
+{% comment %} 
         <div class="content">
+            <h4>Cappucino</h4>
             <img src="{% static 'images/cup3.jpg' %}">
             <!-- <h3>Ready made 250g</h3> -->
             <p>
@@ -45,8 +52,23 @@
             </ul>
             <button class="buy-2">Buy Now</button>
         </div>
+        <div class="gallery">
+            <div class="content">
+                <img src="{% static 'images/cup.jpeg' %}">
+                <!-- <h3>Medium Roast Bean 500g</h3> -->
+                <p>Roasted from farm to cup.</p>
+                <h6>Ksh.1249.00</h6>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                </ul>
+                <button class="buy-1">Buy Now</button>
+            </div> {% endcomment %}
+        {% comment %} </div>
     </div>
-    </div>
-    
+     {% endcomment %}
 </body>
 </html>
