@@ -14,9 +14,6 @@ app_name = 'shop'
 urlpatterns = [
     # Home page
     path('', views.home, name='home'),
-    path('', views.products, name='products')
-
-    # Page that shows all the pizzas.
-    # path('shop/', views.home, name='home') # Corrected the typo here
-]
+    path('shop/products', views.products , name='products'),
+   ]
 
