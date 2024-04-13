@@ -31,6 +31,12 @@ a{
     margin: 50px 0;
 
 }
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Optional: Allows items to wrap onto new lines */
+    justify-content: space-between; /* Optional: Adds space between items */
+   }
+   
 
 .content{
     width: 20%;
