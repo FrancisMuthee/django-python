@@ -48,6 +48,17 @@ a{
     cursor: pointer;
     padding-top: 10px;
 }
+.all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Aligns items evenly in the container */
+    padding: 20px; /* Optional: Add some padding around the flex container */
+}
+
+.gallery {
+    flex: 1 0 200px; /* Adjust the flex-basis value as needed */
+    margin: 10px; /* Add some margin around each item */
+}
 
 img{
     width: 300px;
