@@ -31,6 +31,12 @@ a{
     margin: 50px 0;
 
 }
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Optional: Allows items to wrap onto new lines */
+    justify-content: space-between; /* Optional: Adds space between items */
+   }
+   
 
 .content{
     width: 20%;
@@ -42,10 +48,21 @@ a{
     cursor: pointer;
     padding-top: 10px;
 }
+.all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Aligns items evenly in the container */
+    padding: 20px; /* Optional: Add some padding around the flex container */
+}
+
+.gallery {
+    flex: 1 0 200px; /* Adjust the flex-basis value as needed */
+    margin: 10px; /* Add some margin around each item */
+}
 
 img{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     text-align: center;
     margin: 0 auto;
     display: block;
